@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a884dda-428e-4e55-9734-da2837736989" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ejercicio2.java" afterDir="false" />
+    <list default="true" id="1a884dda-428e-4e55-9734-da2837736989" name="Changes" comment="Ejercicio3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ejercicio5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +53,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678022798484</updated>
-      <workItem from="1678022799696" duration="798000" />
+      <workItem from="1678022799696" duration="3913000" />
     </task>
+    <task id="LOCAL-00001" summary="Ejercicio1y2">
+      <created>1678023636102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678023636102</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ejercicio3">
+      <created>1678023903415</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678023903415</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +85,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ejercicio1y2" />
+    <MESSAGE value="Ejercicio3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio3" />
   </component>
 </project>
