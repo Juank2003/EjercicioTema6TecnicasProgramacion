@@ -3,20 +3,17 @@ package org.example;
 import java.util.Scanner;
 
 public class Ejercicio5 {
-    // tabla de caracteres de diez líneas y cuarenta columnas
     private static char[][] canvas = new char[10][40];
 
-    // procedimiento para imprimir la tabla de caracteres
     private static void printCanvas() {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 40; j++) {
-                System.out.print(canvas[i][j]);
+                System.out.print(canvas[i][j] == '\u0000' ? "*" : canvas[i][j]);
             }
             System.out.println();
         }
     }
 
-    // procedimiento para dibujar un carácter
     private static void drawChar() {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese el carácter a dibujar: ");
@@ -28,7 +25,6 @@ public class Ejercicio5 {
         printCanvas();
     }
 
-    // procedimiento para dibujar un rectángulo
     private static void drawRectangle() {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese el carácter a dibujar: ");
@@ -47,7 +43,6 @@ public class Ejercicio5 {
         printCanvas();
     }
 
-    // procedimiento para cambiar el color usando un bote de pintura
     private static void paintBucket() {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese el carácter a usar como bote de pintura: ");
@@ -60,7 +55,6 @@ public class Ejercicio5 {
         printCanvas();
     }
 
-    // procedimiento recursivo para cambiar el color usando un bote de pintura
     private static void paint(int row, int col, char target, char replacement) {
         if (row < 0 || row >= 10 || col < 0 || col >= 40) {
             return;
@@ -75,26 +69,24 @@ public class Ejercicio5 {
         paint(row, col+1, target, replacement);
     }
 
-    // algoritmo principal
     public static void main(String[] args) {
-        // inicializar la tabla de caracteres con espacios
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 40; j++) {
                 canvas[i][j] = ' ';
             }
         }
-        // imprimir la tabla de caracteres
         printCanvas();
-        // repetir hasta que el usuario ingrese la opción 4
-        int option;
-        do {
+        while (true) {
+            Scanner input = new Scanner(System.in);
+            System.out.println("Ingrese la opción deseada: ");
             System.out.println("1. Dibujar un carácter");
             System.out.println("2. Dibujar un rectángulo");
             System.out.println("3. Usar un bote de pintura");
-            System.out.println("4. Salir");
-            System.out.println("Ingrese la opción: ");
-            Scanner input = new Scanner(System.in);
-            option = input.nextInt();
+            System.out.println("0. Salir");
+            int option = input.nextInt();
+            if (option == 0) {
+                break;
+            }
             switch (option) {
                 case 1:
                     drawChar();
@@ -105,11 +97,9 @@ public class Ejercicio5 {
                 case 3:
                     paintBucket();
                     break;
-                case 4:
-                    break;
                 default:
                     System.out.println("Opción inválida");
             }
-        } while (option != 4);
+        }
     }
 }
